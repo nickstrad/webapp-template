@@ -1,7 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Layout } from "components/Layout";
-
-import { LandingPage } from "components/LandingPage";
+import { Layout, Login } from "components";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,10 +8,10 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+export default function LoginPage() {
   return (
     <Layout>
-      <LandingPage />
+      <Login />
     </Layout>
   );
 }
