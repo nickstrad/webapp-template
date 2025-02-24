@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Layout } from "components";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,9 +8,5 @@ export const meta: MetaFunction = () => {
 };
 
 export default function AboutPage() {
-  return (
-    <Layout>
-      <div>About</div>
-    </Layout>
-  );
+  return <div>About</div>;
 }
